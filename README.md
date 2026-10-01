@@ -2,11 +2,17 @@
 JobDataPipeline is a collaborative data engineering project focused on collecting, transforming, and preparing technical job market data in Saudi Arabia for analytics. The project was developed as part of the Data Engineering Bootcamp – August 2026, offered by the Saudi Digital Academy (SDA) in collaboration with WeCloudData.
 
 Job Data Pipeline - DE 2026 | Team C
+
 End-to-end ELT pipeline to extract job postings from 5 heterogeneous sources, build a clean Data Warehouse on Snowflake with dbt, and enforce data quality.
 
 Original Team Project: Lee115/DE-2026-TeamC-JobDataPipeline-Cohort-1 
-My Role: Data Engineer - Extraction, Transformation & dbt Modeling Lead
+Team Member : 
+-Lamia Alsuhibani
+-Ghala Alsalem
+-Mohammed Alharbi
 
+
+My Role: Data Engineer - Extraction, Transformation & dbt Modeling Lead
 Architecture Overview
 5 Sources (API / Scraping / Static) -> Python Extractors - python cleaning and Transformation -> dbt (staging -> intermediate -> marts) -> Star Schema -> dbt tests + docs
 What I Built (My Contribution)
@@ -20,11 +26,8 @@ JSearch / RapidAPI: Header-based auth with RapidAPI host/key management
 FreeHire: Browser simulation & dynamic page handling
 Tanqeeb (Arabic Source): Arabic content extraction
 Tapneo: Static file ingestion
-Implemented production-grade features for all extractors:
 
-Robust error handling, retries, and Rate Limiting
-Quota management for limited APIs
-Unified JSON output schema
+
 
 2. Data Cleaning & Normalization (Python - Pandas & BeautifulSoup)
 HTML Cleaning: Removed HTML tags from job descriptions using BeautifulSoup
