@@ -65,4 +65,4 @@ Designing a scalable dimensional model that supports both job-level and skill-le
 
 
 
-Author: [Your Name] | [Your LinkedIn] | [Your Portfolio]
+Author:Muradi Almutairi|  |LinkedIn : https://www.linkedin.com/in/muradi-a-3828011b4/
