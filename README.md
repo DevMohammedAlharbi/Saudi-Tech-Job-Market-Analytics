@@ -12,7 +12,7 @@ Architecture Overview
 What I Built (My Contribution)
 This was a collaborative team project. My core contributions were:
 
-1. Multi-Source Job Extraction Framework (Python)
+1- Multi-Source Job Extraction Framework (Python)
 Built 5 independent extractors, each with a different integration pattern to handle real-world constraints:
 
 Jooble API: Direct API key authentication
@@ -25,11 +25,13 @@ Implemented production-grade features for all extractors:
 Robust error handling, retries, and Rate Limiting
 Quota management for limited APIs
 Unified JSON output schema
+
 2. Data Cleaning & Normalization (Python - Pandas & BeautifulSoup)
 HTML Cleaning: Removed HTML tags from job descriptions using BeautifulSoup
 Skill Extraction: Parsed and extracted technical skills from unstructured text descriptions
 Translation Layer: Translated Arabic job postings (Tanqeeb source) to English for unified analysis
-Field Standardization: Unified formats for titles, locations, employment types before loading to Snowflake
+Field Standardization: Unified formats for titles, locations, employment types before loading to Snowflake.
+
 3. dbt Modeling - Full Star Schema on Snowflake
 Designed and implemented a Fact Constellation schema with 3 layers:
 
@@ -40,7 +42,7 @@ intermediate: Business logic, deduplication, skill normalization
 marts: Final dimensional model
 Dimensional Model:
 
-5 Dimensions: dim_company, dim_location, dim_date, dim_job_attributes, dim_skill
+[5 Dimensions]: dim_company, dim_location, dim_date, dim_job_attributes, dim_skill
 2 Fact Tables: fct_job_postings, fct_job_skills
 Used dbt_utils.generate_surrogate_key() for surrogate keys
 Implemented Unknown Member Pattern to handle nulls / missing FKs without breaking joins
